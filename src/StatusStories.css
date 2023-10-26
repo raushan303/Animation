@@ -1,0 +1,80 @@
+/* src/components/StatusStories.css */
+.status-stories {
+  /* Container styles, adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4a4;
+  margin-top: 30px;
+  padding: 50px;
+}
+
+.story-button {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.story-box {
+  /* Story card styles, adjust as needed */
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.progress-bar {
+  /* Progress bar styles, adjust as needed */
+  height: 6px;
+  border-radius: 6px;
+  background-color: #3498db;
+  margin-top: 10px;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+  align-self: flex-start;
+}
+
+.story {
+  padding: 20px;
+  margin-top: 50px;
+  background: green;
+  border: 1px solid yellow;
+  width: 80px;
+}
+
+.enter-animation {
+  animation-name: enterStory;
+  animation-duration: 3s;
+}
+
+.exist-animation {
+  animation-name: existStory;
+  animation-duration: 3s;
+}
+
+@keyframes enterStory {
+  from {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes existStory {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-180px);
+    opacity: 0;
+  }
+}

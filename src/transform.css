@@ -1,0 +1,27 @@
+.t-container,
+.t-container-2 {
+  height: 50px;
+  width: 50px;
+  background: red;
+  margin: 30px;
+  transition-duration: 4s;
+}
+
+.t-container:hover {
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes rotateOnHover {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation on hover */
+.t-container-2:hover {
+  animation: rotateOnHover 2s linear infinite; /* Rotate infinitely on hover */
+}

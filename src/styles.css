@@ -1,0 +1,79 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  cursor: pointer;
+  height: 30px;
+  margin: 10px;
+}
+
+.text {
+  margin-top: 0;
+  animation-name: slideup;
+  animation-duration: 4s;
+}
+
+.hide-text {
+  margin-top: 20px;
+  animation-name: slidedown;
+  animation-duration: 1s;
+}
+
+@keyframes slideup {
+  0% {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  25% {
+    margin-top: -20px;
+    margin-left: 30px;
+  }
+  35% {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  45% {
+    margin-top: -10px;
+    margin-left: 30px;
+  }
+  55% {
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+  65% {
+    margin-top: -5px;
+    margin-left: 30px;
+  }
+  75% {
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+  100% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+@keyframes slidedown {
+  from {
+    margin-top: 0px;
+    opacity: 1;
+  }
+  to {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
